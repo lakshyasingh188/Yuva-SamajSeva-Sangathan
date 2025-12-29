@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+/* ===== TOP STRIP ===== */
+.top-strip {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* ===== HEADER WRAPPER ===== */
+.header-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===== FIRST HEADER ===== */
+.header-top {
+    background: linear-gradient(90deg, #ff9933, #138808);
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-area img {
+    width: 150px;
+    height: 130px;
+    background: white;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.title-area h1 {
+    font-size: 26px;
+}
+
+.title-area h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ===== SECOND HEADER (LIKE TOOLS24) ===== */
+.header-bottom {
+    background: #0b5ed7;
+    padding: 12px 6%;
+    position: relative;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.nav a.active,
+.nav a:hover {
+    background: white;
+    color: #0b5ed7;
+    font-weight: 600;
+}
+
+.btn-nav {
+    background: #ffffff;
+    color: #138808 !important;
+    font-weight: 600;
+}
+
+/* ===== WATERMARK ===== */
+.header-watermark {
+    position: absolute;
+    inset: 0;
+    background-image: url("heroine-image3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 420px;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* HERO SLIDER */
+.hero-slider {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* TRACK */
+.hero-track {
+    display: flex;
+    width: max-content;
+    animation: scrollHero 30s linear infinite;
+}
+
+/* IMAGES */
+.hero-track img {
+    width: 100vw;
+    height: 420px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* ANIMATION */
+@keyframes scrollHero {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300vw);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 260px;
+    }
+
+    .hero-track img {
+        height: 260px;
+    }
+}
+/* MEMBERS SECTION */
+.members-section {
+    padding: 60px 5%;
+    background: #f8f9fb;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a3d62;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.member-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 25px 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGE */
+.member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1e90ff;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.member-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.member-card .post {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background: #1e90ff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.member-card .location {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.member-card .bio {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+/* MEMBER PHOTOS */
+.member-photos {
+    padding: 60px 5%;
+    background: #f4f7fb;
+    text-align: center;
+}
+
+.photo-title {
+    font-size: 32px;
+    color: #0a3d62;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.photo-subtitle {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* GRID */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+/* IMAGE */
+.photo-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
