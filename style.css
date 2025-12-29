@@ -23,7 +23,7 @@
 /* ===== FIRST HEADER ===== */
 .header-top {
     background: linear-gradient(90deg, #ff9933, #138808);
-    padding: 20px 6%;
+    padding: 5px 6%;
     display: flex;
     align-items: center;
     color: white;
@@ -34,30 +34,32 @@
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
-
 .logo-area img {
-    width: 150px;
-    height: 130px;
-    background: white;
+  transform: translateX(-90x);
+}
+.logo-area img {
+    width: 180px;
+    height: 160px;
+    background: goldenrod;
     border-radius: 12px;
     padding: 4px;
 }
 
 .title-area h1 {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .title-area h2 {
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 400;
 }
 
 /* ===== SECOND HEADER (LIKE TOOLS24) ===== */
 .header-bottom {
-    background: black;
-    padding: 12px 6%;
+    background: rgb(54, 54, 238);
+    padding: 4px 6%;
     position: relative;
     z-index: 2;
 }
