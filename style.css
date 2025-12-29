@@ -11,7 +11,7 @@
     color: white;
     text-align: center;
     padding: 8px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 /* ===== HEADER WRAPPER ===== */
@@ -34,7 +34,7 @@
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 30px;
 }
 
 .logo-area img {
@@ -46,17 +46,17 @@
 }
 
 .title-area h1 {
-    font-size: 26px;
+    font-size: 70px;
 }
 
 .title-area h2 {
-    font-size: 14px;
+    font-size: 30px;
     font-weight: 400;
 }
 
 /* ===== SECOND HEADER (LIKE TOOLS24) ===== */
 .header-bottom {
-    background: #0b5ed7;
+    background: black;
     padding: 12px 6%;
     position: relative;
     z-index: 2;
@@ -93,10 +93,10 @@
 .header-watermark {
     position: absolute;
     inset: 0;
-    background-image: url("heroine-image3.jpg");
+    background-image: url("heroin-image3.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 420px;
+    background-size: 600px;
     opacity: 0.12;
     pointer-events: none;
     z-index: 1;
@@ -264,4 +264,32 @@
 .photo-grid img:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+.about-long {
+  background: #f8f9fb;
+  padding: 70px 20px;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #0b3c5d;
+}
+
+.about-container p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 18px;
+  text-align: justify;
 }
